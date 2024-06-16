@@ -1,0 +1,89 @@
+<!-- 
+    
+1. What is npm 
+   npm is a world's largest software package manager and installer. npm command will do lot of things behind the scenes 
+   libraries, packages, and all other production stuff will be taken care by npm command
+
+
+2. What is parcel/webpack and why do we need it 
+   parcel or webpack are types of bundlers in javascript.
+   Bundler - A Development tool that combines lot of js files and packages into single code to 
+   build a production ready application. We need bundlers in order to reduce the size of the code 
+   and improve the performance of application.
+
+
+3. what is .parcel-cache
+   .parcel-cache contains or stores information and dependencies of our project and won't
+   re-analyze or re-builds everything from scratch which results very fast in building and
+   provides optimization to our code. 
+
+
+4. What is npx
+   npx is a command where we use to execute our code and it takes us to entry point of
+   code(src/index.html). We use this command in order to start or build our application.
+
+
+5. Difference between dependency and dev-dependency 
+   devDependencies - these are the packages that we need in our development phase to developing
+   and testing purposes only. 
+
+   dependencies - these dependencies are comes into the picture in production phase which takes 
+   care of proper running of our application
+
+
+6. What is Tree Shaking
+   While developing an applications some unused code or packages are present in our code or 
+   modules. These modules and packages will not be included in our application build process.
+
+   Tree Shaking also known as "Dead Code Elimination".  
+
+
+7. What is Hot Module Replacement
+   HMR in react will helps in updating the modules or code browser at runtime without refreshing a 
+   whole page. It Improves Development Experience due to it's auto-updating feature. 
+
+
+8. What is .gitignore and what should we add and not add into it
+   gitignore is a folder which taken care of files which are not required while pushing files or 
+   modules into our github.
+
+   Some of the files that we add into github are node_modules, dist folder, parcel-cache 
+   because these folders contains thousands of dependencies which will generated automatically
+   when we run commands and due to this app performance may get effected. regular modules which
+   won't generated automatically even after deleting we won't add those files like index.html, 
+   app.js etc
+
+
+9. package.json and package-lock.json 
+   Package.json file contains installed packages, description about project, dev-dependencies
+   and etc along with thier versions 
+
+   package-lock.json file contains transitive dependencies and continously tracks exact version of 
+   the installing packages in our dev environment.
+
+
+10.why should i not modify package-lock.json
+   The package-lock.json file is an important part of Node JS and npm ecosystem. It is 
+   automatically generated and maintained by npm and is used to lock some specific versions of 
+   pacakges installed in projects. Modifying it generally not recommended due to several reasons 
+   Dependency Version Consistency, Depenedency Integration, Collaboration, Conflict Resolution, 
+   Reproducibility
+
+
+11.What is Node_Modules and is that a good idea to push on to git
+   node_modules contain thousands of transitive dependencies and these modules are generated 
+   automatically. No, We won't push the node_modules into our github because of several reasons 
+   like size, redundancy, security, version conflicts etc. 
+
+
+12.What is dist folder
+   The dist folder in react is a folder that contains the all files that we need to develop and 
+   run our application which includes JS Files, CSS files and assets of an app. 
+
+
+13.What is Browserslists
+   Browserslists - Is a type of an array which we mention the Browsers along with it's versions to 
+   run our applications in those browsers at any cost. This browsers list will present in 
+   package.json file. 
+
+/>

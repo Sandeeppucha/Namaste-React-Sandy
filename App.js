@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-const parent = React.createElement('div', {}, 
-    React.createElement('h1', {}, 'Hello World Welcome to Namaste React'
-    )
-);
+const Heading = () => <h1>This is a Functional Arrow Component</h1>
+
+const Heading2 = () => (
+    <div>
+        <Heading />
+        <h1>This is a return FC</h1>
+    </div>
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(parent)
+root.render(<Heading2/>);

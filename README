@@ -1,0 +1,155 @@
+#### ASSIGNEMNT ONE ####
+
+1. What is Emmet..??
+    
+    Emmet is a plugin for many popular text editors, that helps web developers write HTML and CSS more quickly. It uses abbreviations and shortcuts to expand simple code snippets into full-fledged HTML-CSS structures.
+
+2. Difference Between library and framework..??
+    
+    Library - A Library is a collection of pre-written code that you can call to help perform specific tasks in your program
+
+    Framework - A Framework is a larger structure that provides a foundation and rules for building your application, guiding it's flow and architecture
+
+3. What is CDN And Why do we use it..??
+    
+    A CDN Or Content Delivery Network, is a system of distributed servers that deliver web content to the users based on their geographic location 
+
+    why we use it
+
+    => Faster load time
+    => Reduced Server Load 
+    => Improved Reliability
+    => Better Scalability
+    => Enhanced Security
+
+4. Why is React Known as React..??
+    
+    React is Called as React, because it allows applications to efficiently react to changes in data. The key idea is that, it enables developers to build user interfaces that can update and render components very quickly when the data changes.
+
+5. What is cross origin in script tag?
+    
+    The cross origin attribute helps manage how your browser requests and handles scripts from different origins, enhancing security and resource sharing
+
+6. What is diference between React and ReactDOM..??
+
+    React - React is a JavaScript Library used for building user interfaces, specifically for single page applications where you need a fast and interactive experience 
+
+    ReactDOM - It is a Separate library that works alongside react. it provides methods to interact with the DOM and manage the rendering of react components
+
+7. What is difference between react.development.js and react.production.js files via CDN?
+
+    Development Version (react.development.js): Helps developers by providing detailed error messages and warnings.
+
+    Production Version (react.production.js): Optimized for performance with a smaller size and without development-specific features.
+
+8. What is async and defer?
+
+    async - The async attribute allows the browser to download the script while parsing the HTML, and executes the script as soon as it’s downloaded, without waiting for the rest of the HTML to be parsed.
+
+    defer - The defer attribute allows the browser to download the script while parsing the HTML, and executes the script only after the entire HTML document has been parsed, maintaining the order of script execution.
+
+	
+
+#### ASSIGNEMNT TWO ####
+
+1. What is npm 
+   
+   npm is a world's largest software package manager and installer. npm command will do lot of things behind the scenes libraries, packages, and all other production stuff will be taken care by npm command
+
+
+2. What is parcel/webpack and why do we need it 
+   
+   parcel or webpack are types of bundlers in javascript.
+   Bundler - A Development tool that combines lot of js files and packages into single code to build a production ready application. We need bundlers in order to reduce the size of the code and improve the performance of application.
+
+
+3. what is .parcel-cache
+   
+   .parcel-cache contains or stores information and dependencies of our project and won't re-analyze or re-builds everything from scratch which results very fast in building and provides optimization to our code. 
+
+
+4. What is npx
+   
+   npx is a command where we use to execute our code and it takes us to entry point of code(src/index.html). We use this command in order to start or build our application.
+
+
+5. Difference between dependency and dev-dependency 
+   
+   devDependencies - these are the packages that we need in our development phase to developing and testing purposes only. 
+
+   dependencies - these dependencies are comes into the picture in production phase which takes care of proper running of our application
+
+
+6. What is Tree Shaking
+   
+   While developing an applications some unused code or packages are present in our code or modules. These modules and packages will not be included in our application build process.
+
+   Tree Shaking also known as "Dead Code Elimination".  
+
+
+7. What is Hot Module Replacement
+   
+   HMR in react will helps in updating the modules or code browser at runtime without refreshing a whole page. It Improves Development Experience due to it's auto-updating feature. 
+
+
+8. What is .gitignore and what should we add and not add into it
+   
+   .gitignore is a folder which taken care of files which are not required while pushing files or modules into our github.
+
+   Some of the files that we add into github are node_modules, dist folder, parcel-cache because these folders contains thousands of dependencies which will generated automatically when we run commands and due to this app performance may get effected. regular modules which won't generated automatically even after deleting we won't add those files like index.html, 
+   app.js etc
+
+9. package.json and package-lock.json 
+   Package.json file contains installed packages, description about project, dev-dependencies and etc along with thier versions 
+
+   package-lock.json file contains transitive dependencies and continously tracks exact version of the installing packages in our dev environment
+
+10. why should i not modify package-lock.json
+   
+    The package-lock.json file is an important part of Node JS and npm ecosystem. It is automatically generated and maintained by npm and is used to lock some specific versions of pacakges installed in projects. Modifying it generally not recommended due to several reasons 
+
+    Dependency Version Consistency
+    Depenedency Integration
+    Collaboration
+    Conflict Resolution 
+    Reproducibility
+
+
+11. What is Node_Modules and is that a good idea to push on to git
+   
+    node_modules contain thousands of transitive dependencies and these modules are generated automatically. No, We won't push the node_modules into our github because of several reasons like size, redundancy, security, version conflicts etc. 
+
+
+12. What is dist folder
+   
+    The dist folder in react is a folder that contains the all files that we need to develop and run our application which includes JS Files, CSS files and assets of an app. 
+
+
+13. What is Browserslists
+   
+    Browserslists - Is a type of an array which we mention the Browsers along with it's versions to run our applications in those browsers at any cost. This browsers list will present in package.json file. 
+
+
+#### ASSIGNEMNT THREE ####
+
+1. What is JSX 
+
+   JSX is a powerful tool in the React ecosystem, allowing developers to write HTML-like code within JavaScript. This combination of technologies facilitates the creation of dynamic and complex user interfaces in a more intuitive and maintainable way.
+
+2. Superpowers of JSX
+
+   Syntactic Sugar for React.createElement
+   Readability and Maintainability
+   Embedding JavaScript Expressions
+   Conditional Rendering
+   CSS-in-JS with JSX, Fragment Short Syntax, Event Handling
+
+3. Role of type attribute in script tag? What options can I use there?
+
+    The type attribute in the "script" tag is used to define the scripting language of the script.
+
+    => text/javascript: Standard JavaScript (default if type is omitted).
+    => module: Indicates that the script is an ES6 module.
+    => application/json: Treats the script content as JSON data
+    => text/babel: Used for Babel, allowing ES6+ code to be transpiled into ES5
+    => text/typescript: Used for TypeScript, allowing TypeScript code to be    transpiled into JavaScript
